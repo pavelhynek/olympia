@@ -9,8 +9,3 @@ services:
 
 script:
   - ./bin/build.js --type=all
-deploy:
-  provider: heroku
-  api_key:
-    secure: 3a31416a44565544905dbb9489a635901e5559c1
-    app: olympia
