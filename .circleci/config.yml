@@ -2,6 +2,4 @@ version: 2.1
 jobs:
   build:
     docker: 
-      - image: docker
-    steps:
-      - ./bin/build.js --type=all
+      - image: ../strapi/Dockerfile
