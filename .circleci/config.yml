@@ -1,16 +1,11 @@
-language: node_js
-node_js:
-  - 12
-
-sudo: required
-
-services:
-  - docker
-
-script:
-  - ./bin/build.js --type=all
-deploy:
-  provider: heroku
-  api_key:
-    secure: 3a31416a44565544905dbb9489a635901e5559c1
-    app: olympia
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: alpine:3.7
+    steps:
+      - run:
+          name: The First Step
+          command: |
+            echo 'Hello World!'
+            echo 'This is the delivery pipeline'
