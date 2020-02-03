@@ -10,7 +10,7 @@ if [ "$1" = "strapi" ]; then
     EXTRA_ARGS=${EXTRA_ARGS}
 
     echo "Using strapi $(strapi -v)"
-    echo "No project found at /srv/app. Creating a new strapi project"
+    echo "No project found at /srv/olympia. Creating a new strapi project"
 
     DOCKER=true strapi new . \
       --dbclient=$DATABASE_CLIENT \
