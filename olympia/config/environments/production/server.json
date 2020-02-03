@@ -1,6 +1,5 @@
 {
-  "host": "localhost",
-  "port": "${process.env.PORT || 1337}",
+  "host": "jedalenolympia.herokuapp.com",
   "production": true,
   "proxy": {
     "enabled": false
