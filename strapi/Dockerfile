@@ -4,9 +4,9 @@ FROM strapi/base:${BASE_VERSION}
 ARG STRAPI_VERSION
 RUN yarn global add strapi@${STRAPI_VERSION}
 
-WORKDIR /srv/olympia
+WORKDIR /srv/app
 
-VOLUME /srv/olympia
+VOLUME /srv/app
 
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["docker-entrypoint.sh"]

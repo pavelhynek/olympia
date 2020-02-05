@@ -110,4 +110,3 @@ You can build the images with the build command. To see the options run:
 ```
 ./bin/build.js --help
 ```
-# olympia
